@@ -94,3 +94,7 @@ Les changements sont immédiats (montage volume), il suffit de rafraichir la pag
 ```bash
 docker compose stop
 ```
+
+## Licence
+
+Ce projet est sous licence MIT. N'hésitez pas à forker et à contribuer pour sauver d'autres personnes des distractions et de la procrastination.
