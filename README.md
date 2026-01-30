@@ -8,3 +8,9 @@ Une solution Infrastructure-as-Code pour la discipline numérique. Utilise le DN
 - 🌐 Nginx
 - DNS / Manipulation du fichier hosts
 - 💻 HTML/CSS
+
+- Installation de `docker` et `docker-compose`
+    ```bash
+        sudo apt install -y docker.io docker-compose -y
+    ```
+
