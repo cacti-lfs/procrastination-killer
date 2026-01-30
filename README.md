@@ -17,7 +17,7 @@ Le système intercepte les requêtes DNS au niveau du système d'exploitation et
 graph LR
     User(Utilisateur) -->|Tape youtube.com| OS(Fichier Hosts)
     OS -->|Redirige vers 127.0.0.1| Docker(Conteneur Nginx)
-    Docker -->|Sert index.html| Screen(Page de Conscience)
+    Docker -->|Sert index.html| Screen(Page de Blocage)
     Docker -.->|Bloque| Real(Vrai YouTube)
 ```
 
@@ -78,7 +78,7 @@ echo -e "\n# PROCRASTINATION-KILLER\n127.0.0.1 youtube.com\n127.0.0.1 www.youtub
 
 ## Personnalisation
 
-** Modification de la liste des sites bloqués :**
+**Modification de la liste des sites bloqués :**
     1. Modifier le fichier `setup.sh` (section `[alt_names]`) pour ajouter des domaines.
     2. Relancer `./setup.sh`
     3. Ajouter les domaines dans `/etc/hosts`
