@@ -1,0 +1,10 @@
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: procrastination-killer
+    restart: always
+    ports:
+      - "8032:80"
+      - "4432:443"
+    volumes:
+      - ./content:/usr/share/nginx/html:ro

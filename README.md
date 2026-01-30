@@ -11,6 +11,6 @@ Une solution Infrastructure-as-Code pour la discipline numérique. Utilise le DN
 
 - Installation de `docker` et `docker-compose`
     ```bash
-        sudo apt install -y docker.io docker-compose -y
+        sudo apt install -y docker.io docker-compose docker-compose-plugin -y
     ```
 
