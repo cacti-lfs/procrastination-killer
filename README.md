@@ -9,6 +9,16 @@ Une solution **Infrastructure-as-Code** pour la discipline numérique. Ce projet
 
 ---
 
+## Ce que ce projet démontre
+
+- Compréhension du fonctionnement DNS et de la résolution de noms
+- Génération et gestion d'une **PKI locale** (Root CA, certificats signés, chaîne de confiance)
+- Déploiement d'un service **HTTPS** auto-signé sans erreur navigateur
+- Utilisation de **Docker Compose** pour une infrastructure reproductible
+- Approche **Infrastructure-as-Code** : tout est scriptable et versionné
+
+---
+
 ## Architecture
 
 Le système intercepte les requêtes DNS au niveau du système d'exploitation et répond avec l'adresse d'un conteneur Docker local au lieu du vrai site. Nginx sert alors une page de rappel à l'ordre via HTTPS, grâce à une autorité de certification (CA) générée localement.
@@ -42,7 +52,7 @@ sudo apt install -y docker.io docker-compose-plugin git
 
 ### Cloner le projet
 ```bash
-git clone [https://github.com/ton-pseudo/procrastination-killer.git](https://github.com/ton-pseudo/procrastination-killer.git)
+git clone [https://github.com/cacti-lfs/procrastination-killer.git](https://github.com/cacti-lfs/procrastination-killer.git)
 cd procrastination-killer
 ```
 
